@@ -20,9 +20,19 @@
       //<![CDATA[
         $(function() {
           var d = new Date();
-        	d = new Date(d.getFullYear(), 5, 24, 15);
-        	$('#defaultCountdown').countdown({until: d});
-        	$('#year').text(d.getFullYear());
+          var today = new Date();
+          var yesMarried = function() {
+            $('h1').text('Yesssssssssss!');
+          };
+          
+          var marriedDate = new Date(d.getFullYear(), 5, 23, 15);
+        
+          if(marriedDate < today) {
+            yesMarried();
+          }
+        
+        	$('#defaultCountdown').countdown({until: marriedDate, onExpiry: yesMarried});
+        	$('#year').text(marriedDate.getFullYear());
         });
       //]]>
     </script>
