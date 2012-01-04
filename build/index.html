@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> ><! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>Is Emma married yet?</title>
+    <link href='http://fonts.googleapis.com/css?family=Patua+One|Give+You+Glory|Muli|Amaranth:700' media='all' rel='stylesheet' />
+    <link type="text/css" media="screen" rel="stylesheet" href="/stylesheets/site.css" />
+  </head>
+  <body>
+    <h1>Nope!</h1>
+    <div id='defaultCountdown'></div>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+    <script src='/javascripts/jquery.countdown.js'></script>
+    <script type='text/javascript'>
+      //<![CDATA[
+        $(function() {
+          var d = new Date();
+        	d = new Date(d.getFullYear(), 5, 24, 15);
+        	$('#defaultCountdown').countdown({until: d});
+        	$('#year').text(d.getFullYear());
+        });
+      //]]>
+    </script>
+  </body>
+</html>

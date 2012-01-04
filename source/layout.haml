@@ -1,0 +1,26 @@
+!!! 5
+/[if lt IE 7 ] <html lang="en" class="no-js ie6">
+/[if IE 7 ] <html lang="en" class="no-js ie7">
+/[if IE 8 ] <html lang="en" class="no-js ie8">
+/[if IE 9 ] <html lang="en" class="no-js ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %title Is Emma married yet?
+    %link{:href=>'http://fonts.googleapis.com/css?family=Patua+One|Give+You+Glory|Muli|Amaranth:700', :rel=>"stylesheet", :media=>"all"}
+    =stylesheet_link_tag "site.css"
+
+  %body
+    =yield
+    
+    %script{:src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+    %script{:src=>"/javascripts/jquery.countdown.js"}
+    
+    :javascript
+      $(function() {
+        var d = new Date();
+      	d = new Date(d.getFullYear(), 5, 24, 15);
+      	$('#defaultCountdown').countdown({until: d});
+      	$('#year').text(d.getFullYear());
+      });
