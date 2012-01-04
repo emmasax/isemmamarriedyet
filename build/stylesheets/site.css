@@ -9,12 +9,19 @@ h1 {
   font-size: 5em;
   font-weight: 900;
   text-shadow: 1px 1px white, -1px -1px black;
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
 
 p {
   font-weight: bold;
   font-size: 16px;
   font-family: Helvetica, Arial, sans-serif; }
+
+footer p, footer a {
+  color: #a52a2a;
+  font-weight: normal;
+  font-size: 11px;
+  margin-top: 100px;
+  text-decoration: none; }
 
 .hasCountdown {
   border: 1px solid #db9370;
@@ -63,6 +70,7 @@ p {
   font-size: 75%;
   font-family: Helvetica, Arial, sans-serif;
   font-weight: bold;
+  color: #a52a2a;
   text-align: center; }
 
 .countdown_amount {
