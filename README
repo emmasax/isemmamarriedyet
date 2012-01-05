@@ -1,3 +1,18 @@
 Uses jquery.countdown.js to show days/hours/mins/secs until an event.
 
 The event is ME GETTING MARRIED
+
+---------------------------------------------------------------------
+
+Uses middleman to generate HTML and CSS from HAML and SASS
+http://middlemanapp.com/guides/getting-started
+
+> gem install middleman
+
+To run the server on localhost:4567
+
+> middleman
+
+To generate HTML and CSS
+
+> middleman build
