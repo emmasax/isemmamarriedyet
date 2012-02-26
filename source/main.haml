@@ -1,0 +1,46 @@
+!!! 5
+/[if lt IE 7 ] <html lang="en" class="no-js ie6">
+/[if IE 7 ] <html lang="en" class="no-js ie7">
+/[if IE 8 ] <html lang="en" class="no-js ie8">
+/[if IE 9 ] <html lang="en" class="no-js ie9">
+/ [if (gt IE 9)|!(IE)]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  %head
+    %title The Wedding: Emma &amp; Michael
+    %link{:href=>"../stylesheets/main.css", :type=>"text/css", :media=>"screen", :rel=>"stylesheet"}
+    %script{:src=>"../javascripts/modernizr.js"}
+    %script{:src=>"https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"}
+  %body
+    %header
+      %time Emma and Michael's wedding: Saturday, 23 June 2012 at 3pm
+
+    .main-content
+      %nav
+        %ul
+          %li
+            %a{:href=>"index.html"}
+              Home
+          %li
+            %a{:href=>"wedding.html"}
+              The ceremony &amp; reception
+          %li
+            %a{:href=>"gift-list.html"}
+              Gift list
+          %li
+            %a{:href=>"transport.html"}
+              Transport &amp; travel
+          %li
+            %a{:href=>"accommodation.html"}
+              Where to stay
+          %li.last
+            %a{:href=>"rsvp.php"}
+              RSVP
+
+      .content
+        =yield
+        
+    %footer
+      %p
+        2012
+    

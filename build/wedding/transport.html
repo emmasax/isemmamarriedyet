@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]> <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]> <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]> ><! <![endif]-->
+<html class='no-js' lang='en'>
+  <!-- <![endif] -->
+  <head>
+    <title>The Wedding: Emma &amp; Michael</title>
+    <link href='../stylesheets/main.css' media='screen' rel='stylesheet' type='text/css' />
+    <script src='../javascripts/modernizr.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+  </head>
+  <body>
+    <header>
+      <time>Emma and Michael's wedding: Saturday, 23 June 2012 at 3pm</time>
+    </header>
+    <div class='main-content'>
+      <nav>
+        <ul>
+          <li>
+            <a href='index.html'>
+              Home
+            </a>
+          </li>
+          <li>
+            <a href='wedding.html'>
+              The ceremony &amp; reception
+            </a>
+          </li>
+          <li>
+            <a href='gift-list.html'>
+              Gift list
+            </a>
+          </li>
+          <li>
+            <a href='transport.html'>
+              Transport &amp; travel
+            </a>
+          </li>
+          <li>
+            <a href='accommodation.html'>
+              Where to stay
+            </a>
+          </li>
+          <li class='last'>
+            <a href='rsvp.php'>
+              RSVP
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class='content'>
+        <h1>Getting there</h1>
+        <p>Shere, and Burrows Lea, is in the middle of the countryside so is not very accessible without the use of a car so all forms of transport will ultimately need car hire or a taxi.</p>
+        <h2>Taxi companies</h2>
+        <p>We recommend booking taxis in advance where possible, both to and from the venue.</p>
+        <ul class='taxis'>
+          <li>
+            <b>Guildford</b>
+            <span>01483 56 56 56</span>
+             - Fives and Sixes
+          </li>
+          <li>
+            <b>Peaslake/Shere</b>
+            <span>01483 331 553</span>
+             - Speedwell
+          </li>
+          <li>
+            <b>Cranleigh</b>
+            <span>01483 277 223</span>
+             - Cranleigh Taxis
+          </li>
+        </ul>
+        <h2>By train from London Waterloo</h2>
+        <p>Trains are every 15 minutes and take approximately 35-40 minutes</p>
+        <p>From Guildford you will need to get a taxi which will take around 20-25 minutes</p>
+        <h2>By car</h2>
+        <p>Enter your postcode to get directions from Google Maps:</p>
+        <input name='q' type='text' />
+        <button>Get directions</button>
+        <script type='text/javascript'>
+          //<![CDATA[
+            $(function() {
+              $('button').click(function() {
+                var action = "http://maps.google.co.uk/maps?q=" + $('input').val() + "+to+GU5+9QG";
+                window.location.href=action;
+              });
+            });
+          //]]>
+        </script>
+      </div>
+    </div>
+    <footer>
+      <p>
+        2012
+      </p>
+    </footer>
+  </body>
+</html>

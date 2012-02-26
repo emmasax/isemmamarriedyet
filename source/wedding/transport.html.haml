@@ -1,0 +1,39 @@
+
+%h1 Getting there
+
+%p Shere, and Burrows Lea, is in the middle of the countryside so is not very accessible without the use of a car so all forms of transport will ultimately need car hire or a taxi.
+
+%h2 Taxi companies
+%p We recommend booking taxis in advance where possible, both to and from the venue.
+%ul.taxis
+  %li
+    %b Guildford
+    %span 01483 56 56 56
+    \ - Fives and Sixes
+  %li 
+    %b Peaslake/Shere
+    %span 01483 331 553
+    \ - Speedwell
+  %li
+    %b Cranleigh
+    %span 01483 277 223
+    \ - Cranleigh Taxis
+
+%h2 By train from London Waterloo
+
+%p Trains are every 15 minutes and take approximately 35-40 minutes
+%p From Guildford you will need to get a taxi which will take around 20-25 minutes
+
+%h2 By car
+
+%p Enter your postcode to get directions from Google Maps:
+%input{:type=>"text", :name=>"q"}
+%button Get directions
+  
+:javascript
+  $(function() {
+    $('button').click(function() {
+      var action = "http://maps.google.co.uk/maps?q=" + $('input').val() + "+to+GU5+9QG";
+      window.location.href=action;
+    });
+  });
